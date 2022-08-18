@@ -1,0 +1,31 @@
+{
+  "name": "castle-drop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official site for Castle Drop",
+  "author": "Castle Drop",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "gatsby": "^4.21.0",
+    "gatsby-plugin-emotion": "^7.21.0",
+    "gatsby-plugin-root-import": "^2.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.6",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}

@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+
+# gatsby
+public
+.cache
+src/gatsby-types.d.ts
+
+# environment variables
+.env*
+
+# mac
+.DS_Store
