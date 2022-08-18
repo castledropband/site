@@ -7,17 +7,7 @@ const config: GatsbyConfig = {
     siteUrl: 'https://castledrop.band',
   },
   graphqlTypegen: true,
-  plugins: [
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-root-import',
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: ['Creepster', 'Roboto'],
-        display: 'swap',
-      },
-    },
-  ],
+  plugins: ['gatsby-plugin-emotion', 'gatsby-plugin-root-import'],
 };
 
 export default config;

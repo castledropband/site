@@ -16,4 +16,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-export { Head } from 'components/head';
