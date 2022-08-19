@@ -5,11 +5,12 @@ export const Title = styled.h1`
   font-family: var(--font-secondary);
   font-size: var(--font-size-lg);
   color: var(--color-primary);
-  margin-top: 4rem;
+  margin-top: 6rem;
   text-align: center;
+  line-height: 0.9;
 
   @media (min-width: ${breakpoints.sm}) {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 `;
 
@@ -17,7 +18,11 @@ export const SoundcloudContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 8rem 0 6rem 0;
+  margin: 6rem 0;
+
+  @media (min-width: ${breakpoints.sm}) {
+    margin: 8rem 0;
+  }
 
   iframe {
     width: 100%;
