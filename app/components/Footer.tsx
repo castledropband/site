@@ -1,16 +1,12 @@
-import Image from "next/image";
-
-import copyrightIcon from "@/public/copyright.svg";
+import { FaRegCopyright } from "react-icons/fa6";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex items-center justify-center gap-2 p-4">
-      <Image src={copyrightIcon} alt="copyright" className="h-4 w-4" />
-      <p className="font-unifraktur text-lg text-primary">
-        {currentYear} Castle Drop
-      </p>
+    <footer className="flex items-center justify-center gap-2 p-4 text-primary">
+      <FaRegCopyright className="h-4 w-4" />
+      <p className="font-unifraktur text-lg">{currentYear} Castle Drop</p>
     </footer>
   );
 };

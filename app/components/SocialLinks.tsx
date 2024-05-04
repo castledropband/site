@@ -1,31 +1,26 @@
-import Image from "next/image";
 import Link from "next/link";
+import { FaBandcamp, FaInstagram, FaSoundcloud } from "react-icons/fa6";
 
 import { URLS } from "@/app/consts";
-import instagramIcon from "@/public/instagram.svg";
-import bandcampIcon from "@/public/bandcamp.svg";
-import soundcloudIcon from "@/public/soundcloud.svg";
 
-export const SocialLinks = () => {
-  const socialLinks = [
-    { href: URLS.instagram, image: instagramIcon, alt: "instagram" },
-    { href: URLS.bandcamp, image: bandcampIcon, alt: "bandcamp" },
-    { href: URLS.soundcloud, image: soundcloudIcon, alt: "soundcloud" },
-  ] as const;
+const socialLinks = [
+  { href: URLS.instagram, Icon: FaInstagram },
+  { href: URLS.bandcamp, Icon: FaBandcamp },
+  { href: URLS.soundcloud, Icon: FaSoundcloud },
+] as const;
 
-  return (
-    <div className="mb-10 flex justify-center gap-5">
-      {socialLinks.map(({ href, image, alt }) => (
-        <Link
-          key={alt}
-          href={href}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="transition hover:opacity-70 focus:opacity-70"
-        >
-          <Image src={image} alt={alt} className="h-6 w-6" />
-        </Link>
-      ))}
-    </div>
-  );
-};
+export const SocialLinks = () => (
+  <div className="mb-10 flex justify-center gap-5">
+    {socialLinks.map(({ href, Icon }) => (
+      <Link
+        key={href}
+        href={href}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="transition hover:opacity-70 focus:opacity-70"
+      >
+        <Icon className="h-6 w-6 text-primary" />
+      </Link>
+    ))}
+  </div>
+);
